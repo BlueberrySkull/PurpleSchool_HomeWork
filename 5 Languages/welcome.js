@@ -1,16 +1,19 @@
- let language = 'RU';
+function languageChoise (language) {
+    language = language.toLowerCase()
+    switch (language) {
+        case 'ru':
+            console.log('Здравствуйте!');
+            break;
+        case 'de':
+            console.log('Gutten tag!');
+            break;
+        case 'pl':
+            console.log('Cześć!');
+            break;
+        case 'en':
+        default:
+            console.log('Welcome!')
+    }
+}
 
- switch (language) {
-    case 'RU':
-        console.log('Здравствуйте!');
-        break;
-    case 'DE':
-        console.log('Gutten tag!');
-        break;
-    case 'PL':
-        console.log('Cześć!');
-        break;
-    case 'EN':
-    default:
-        console.log('Welcome!')
- }
+const welcome = languageChoise('RU');
