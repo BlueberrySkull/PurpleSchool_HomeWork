@@ -1,7 +1,10 @@
 const addressLat = 10;
 const addressLong = 15;
-const postionLat = 0;
+const positionLat = 0;
 const positionLong = 0;
 
-let distanceToObject = sqrt((addressLat - postionLat) ** 2 + (addressLong - positionLong) ** 2);
-console.log (`Расстояние до адреса = ${distanceToObject}`);
+function distanceToObject (addLat, addLong, posLat, pos,Long) {
+    return Math.sqrt((addressLat - positionLat) ** 2 + (addressLong - positionLong) ** 2);
+}
+
+console.log (`Расстояние до адреса = ${distanceToObject(addressLat, addressLong, positionLat, positionLong)}`);
